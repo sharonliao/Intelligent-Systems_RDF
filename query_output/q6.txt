@@ -1,0 +1,17 @@
+construct {
+ ?student foaf:konws ?topicLabel
+ }
+ where{
+   select
+      distinct ?topicLabel ?student
+   where{
+    ?student foaf:givenName '%s'.
+    ?student foaf:familyNanme '%s'.
+    ?student focu:hasCompletedCourse ?completedCourse.
+    ?completedCourse focu:completedCourseID ?course.
+    ?completedCourse focu:completedCourseGrade ?grade.
+    ?course focu:hasTopic ?topic.
+    ?topic rdfs:label ?topicLabel.
+    Filter (?grade != 'F')
+  }
+ }

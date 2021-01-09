@@ -1,0 +1,10 @@
+ construct {
+            ?topic owl:sameAs ?link.
+            ?topic rdfs:label ?label.
+          }
+      where{
+        ?course focu:hasTopic ?topic.
+        ?topic owl:sameAs ?link.
+        ?topic rdfs:label ?label.
+        ?course foaf:name '%s'.
+      }

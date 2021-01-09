@@ -1,0 +1,70 @@
+@prefix dbpedia: <http://dbpedia.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix focu: <http://focu.io/schema#> .
+@prefix focudata: <http://focu.io/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+focu:Course a rdfs:Class ;
+    rdfs:label "Course" ;
+    rdfs:comment "The class of course" .
+
+focu:Student a rdfs:Class ;
+    rdfs:label "Student" ;
+    rdfs:comment "The class of student" ;
+    rdfs:subClassOf foaf:Person .
+
+focu:Topic a rdfs:Class ;
+    rdfs:label "Topic" ;
+    rdfs:comment "The class of topic" .
+
+focu:University a rdfs:Class ;
+    rdfs:label "University" ;
+    rdfs:comment "The class of University" ;
+    rdfs:subClassOf foaf:Organization .
+
+focu:completedCourse a rdfs:Class ;
+    rdfs:label "completed Course" ;
+    rdfs:comment "completed Course" .
+
+focu:completedCourseGrade a rdfs:Class ;
+    rdfs:label "grade of the completed Course" ;
+    rdfs:comment "relationship" ;
+    rdfs:domain focu:completedCourse ;
+    rdfs:range rdfs:Literal .
+
+focu:completedCourseID a rdfs:Class ;
+    rdfs:label "ID of the completed Course" ;
+    rdfs:comment "relationship" ;
+    rdfs:domain focu:completedCourse ;
+    rdfs:range focu:Course .
+
+focu:completedCourseTerm a rdfs:Class ;
+    rdfs:label "term of the completed Course" ;
+    rdfs:comment "relationship" ;
+    rdfs:domain focu:completedCourse ;
+    rdfs:range rdfs:Literal .
+
+focu:hasCompletedCourse a rdfs:Class ;
+    rdfs:label "has a completed Course" ;
+    rdfs:comment "relationship" ;
+    rdfs:domain focu:Student ;
+    rdfs:range focu:completedCourse .
+
+focu:hasTopic a rdfs:Class ;
+    rdfs:label "has a topic" ;
+    rdfs:comment "relationship" ;
+    rdfs:domain focu:Course ;
+    rdfs:range focu:Topic .
+
+focu:offeredAt a rdfs:Class .
+
+focu:offeredA rdfs:label "offered at" ;
+    rdfs:comment "relationship" ;
+    rdfs:domain focu:Course ;
+    rdfs:range focu:University .
+

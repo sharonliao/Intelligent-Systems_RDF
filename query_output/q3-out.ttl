@@ -1,0 +1,18 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://focu.io/data#automated_reasoning> rdfs:label "automated reasoning" ;
+    ns1:sameAs <http://dbpedia.org/resource/Automated_reasoning> .
+
+<http://focu.io/data#heuristic> rdfs:label "heuristic" ;
+    ns1:sameAs <http://dbpedia.org/resource/Heuristic> .
+
+<http://focu.io/data#knowledge_representation> rdfs:label "knowledge representation" ;
+    ns1:sameAs <http://dbpedia.org/resource/Knowledge_representation_and_reasoning> .
+
+<http://focu.io/data#recurrent_neural_networks> rdfs:label "recurrent neural networks" ;
+    ns1:sameAs <http://dbpedia.org/resource/Recurrent_neural_network> .
+

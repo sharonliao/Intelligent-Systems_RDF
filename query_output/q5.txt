@@ -1,0 +1,14 @@
+  construct{
+    ?student foaf:givenName ?givenName.
+    ?student foaf:familyNanme ?familyNanme.
+   }
+  where{
+    ?course focu:hasTopic ?topic.
+    ?topic rdfs:label "%s".
+    ?student foaf:givenName ?givenName.
+    ?student foaf:familyNanme ?familyNanme.
+    ?student focu:hasCompletedCourse ?completedCourse.
+    ?completedCourse focu:completedCourseID ?course.
+    ?completedCourse focu:completedCourseGrade ?grade.
+    Filter (?grade != 'F')
+  }

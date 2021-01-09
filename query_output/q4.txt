@@ -1,0 +1,12 @@
+  construct{
+    ?completedCourse foaf:name ?courseName.
+    ?completedCourse focu:completedCourseGrade ?grade.
+  }
+  where{
+    ?student foaf:givenName '%s'.
+    ?student foaf:familyNanme '%s'.
+    ?student focu:hasCompletedCourse ?completedCourse.
+    ?completedCourse focu:completedCourseID ?course.
+    ?course foaf:name ?courseName.
+    ?completedCourse focu:completedCourseGrade ?grade.
+  }

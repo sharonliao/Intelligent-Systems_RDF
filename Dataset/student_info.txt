@@ -1,0 +1,13 @@
+0001;John Smith;John_Smith@gamil.com;COMP6441 Fall2020 A,COMP6441 Fall2019 B
+0002;Michael Clark;Michael_Clark@gamil.com;COMP6321 Fall2018 A+,COMP6711 Fall2018 A
+0003;William Young;William_Young@gamil.com;ECON681 Fall2020 A,ECON682 Fall2019 B
+0004;Mary Carter;Mary_Carter@gamil.com;SOEN7761 Fall2020 A
+0005;Alice Phillips;Alice_Phillips@gamil.com;INDU6381 Winter2020 A,INDU6521 Winter2019 B
+0006;Julie Stevens;Julie_Stevens@gamil.com;INSE7120 Summer2020 A,INSE6610 Winter2019 B
+0007;Teresa Ross;Teresa_Ross@gamil.com;SOEN6431 Summer2020 A,SOEN6441 Fall2019 F
+0008;Doris Hunter;Doris_Hunter@gamil.com;ENCS6041 Fall2019 A,ENCS6042 Fall2019 B
+0009;Gloria Khan;Gloria_Khan@gamil.com;GIIM610 Summer2020 A,GIIM617 Fall2019 B
+0010;Cheryl Mason;Cheryl_Mason@gamil.com;COMS842 Fall2020 A,COMS851 Fall2019 F
+0011;Joan Kennedy;Joan_Kennedy@gamil.com;COMP6721 Fall2019 A,COMP6231 Fall2019 A+
+0012;Kevin Lee;Kevin_Lee@gamil.com
+0015;Lucas Wang;Joe_Lee@gamil.com;COMP6751 Fall2018 A,COMP6741 Fall2019 A,COMP6231 Fall2019 A+

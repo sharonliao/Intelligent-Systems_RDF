@@ -1,0 +1,14 @@
+CONSTRUCT {
+_:v  rdfs:label ?Triples.
+_:v  rdfs:comment 'Total number of students, courses, and topics'.
+  }
+where{
+  SELECT (COUNT(*) as ?Triples)
+    WHERE {
+     {?student rdf:type focu:Student.}
+     union
+     {?course rdf:type focu:Course.}
+     union
+     {?topic rdf:type focu:Topic.}
+    }
+}

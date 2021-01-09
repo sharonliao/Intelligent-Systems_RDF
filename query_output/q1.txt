@@ -1,0 +1,12 @@
+
+CONSTRUCT {
+_:v  rdfs:label ?Triples.
+_:v  rdfs:comment 'Total number of triples in the KB'.
+  }
+where{
+    select (COUNT(*) as ?Triples)
+     WHERE
+     {
+         ?s ?p ?o
+        }
+}

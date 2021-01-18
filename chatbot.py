@@ -204,7 +204,7 @@ def question4(topic, g):
     if len(qres) == 0 :
         print("No one familiars with %s."%topic)
 
-# question5 = "What does Lucas Wang know?"
+# question5 = "What does Lucas know?"
 def question5(student_name, g):
     if len(student_name.split(' '))<2:
         print("No this student.")

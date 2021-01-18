@@ -3,7 +3,7 @@ from spacy.matcher import Matcher
 from rdflib import Graph
 
 # question1 = "What is COMP 474 about?"
-# question2 = "Which courses did Lucas Wang take?"
+# question2 = "Which courses did Lucas take?"
 # question3 = "Which courses cover Expert Systems?"
 # Which courses cover Natural Language Processing?
 # Who is familiar with Recurrent neural networks
